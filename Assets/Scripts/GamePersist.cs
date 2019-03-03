@@ -17,22 +17,24 @@ public class GamePersist
     {
     }
 
-    private Dictionary<string, string> foodMap;
+    private Dictionary<string, string> compoundMap;
+    public Dictionary<string, FoodType> foodMap;
 
     private void Init()
     {
         // 初始化food map
         // 从xml或者json加载
+        foodMap["0"] = new FoodType(0, 0, 1);
     }
 
     public bool InsertRecord(string input, string result)
     {
-        foodMap.Add(input, result);
+        compoundMap.Add(input, result);
         return true;
     }
 
     public string GetResult(string input)
     {
-        return foodMap[input];
+        return compoundMap[input];
     }
 }
