@@ -17,14 +17,32 @@ public class FoodType
 
     public string GetMain()
     {
-        string str = "" + mainType + subType;
+        string str;
+        if (mainType > 9)
+            str = "" + mainType + "00";
+        else
+            str = "0" + mainType + "00";
         return str;
     }
 
     public string GetSub()
     {
-        string str = "" + mainType + "00";
+        int result = mainType * 100 + subType;
+        string str;
+        if (result > 999)
+            str = "" + result;
+        else if (result > 99)
+            str = "0" + result;
+        else if (result > 9)
+            str = "00" + result;
+        else
+            str = "000" + result;
         return str;
+    }
+
+    public string GetSprite()
+    {
+        return GetSub() ;
     }
 
     public int GetLv()

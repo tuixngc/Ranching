@@ -15,16 +15,20 @@ public class GamePersist
 
     GamePersist()
     {
+        Init();
     }
 
-    private Dictionary<string, string> compoundMap;
-    public Dictionary<string, FoodType> foodMap;
+    public Dictionary<string, string> compoundMap = new Dictionary<string, string>();
+    public Dictionary<string, FoodType> foodMap = new Dictionary<string, FoodType>();
 
     private void Init()
     {
         // 初始化food map
         // 从xml或者json加载
-        foodMap["0"] = new FoodType(0, 0, 1);
+        foodMap["0000"] = new FoodType(0, 0, 1);
+        foodMap["0101"] = new FoodType(1, 1, 2);
+
+        compoundMap["00000000"] = "0101";
     }
 
     public bool InsertRecord(string input, string result)
