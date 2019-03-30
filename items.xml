@@ -61,6 +61,67 @@
             <calories>500</calories>
             <price>50</price>
         </bacon>
+        <sausage>
+            <level>2</level>
+            <calories>500</calories>
+            <price>50</price>
+        </sausage>
+        <steak>
+            <level>2</level>
+            <calories>800</calories>
+            <price>80</price>
+        </steak>
+        <mutton_chop>
+            <level>2</level>
+            <calories>800</calories>
+            <price>80</price>
+        <mutton_chop>
     </meat>
+    <diary>
+        <cheese>
+            <level>2</level>
+            <calories>500</calories>
+            <price>20</price>
+        </cheese>
+        <yogurt>
+            <level>2</level>
+            <calories>300</calories>
+            <price>10</price>
+        </yogurt>
+    </diary>
+    <fibre>
+        <caddice>
+            <level>2</level>
+            <strength>50</strength>
+            <price>300</price>
+        </caddice>
+        <jean>
+            <level>2</level>
+            <strength>100</strength>
+            <price>500</price>
+        </cotton>
+        <canvas>
+            <level>2</level>
+            <strength>200</strength>
+            <price>800</price>
+        </canvas>
+        <flax>
+            <level>2</level>
+            <strength>50</strength>
+            <price>300</price>
+        </flax>
+    </fibre>
+     <grain>
+        <flour>
+            <level>2</level>
+            <calories>300</calories>
+            <price>50</price>
+        </flour>
+        <rice>
+            <level>2</level>
+            <calories>500<calories>
+            <price>80</price>
+        </rice>
+    </grain>
 </level_2>
 </ranch>
