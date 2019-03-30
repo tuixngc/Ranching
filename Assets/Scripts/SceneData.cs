@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneData : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class SceneData : MonoBehaviour
             list.Add(ft);
         }
     }
+
 
     public void Clear()
     {
@@ -44,6 +46,8 @@ public class SceneData : MonoBehaviour
 
     public void ExitScene()
     {
+
+        SceneManager.LoadScene(0);
         Debug.Log("exit");
         
     }

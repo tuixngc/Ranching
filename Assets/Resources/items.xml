@@ -1,0 +1,66 @@
+<ranch>
+<level_1>
+    <meat unit="100g">
+        <pork>
+            <level>1</level>
+            <calories>150</calories>
+            <price>10</price>
+        </pork>
+        <beef>
+            <level>1</level>
+            <calories>150</calories>
+            <price>10</price>
+        </beef>
+        <mutton>
+            <level>1</level>
+            <calories>200</calories>
+            <price>15</price>
+        </mutton>
+    </meat>
+    <diary unit="100g">
+        <milk>
+            <level>1</level>
+            <calories>50</calories>
+            <price>4</price>
+        </milk>
+    </diary>
+    <fibre>
+        <wool>
+            <level>1</level>
+            <strength comment="can't be equipment">1</strength>
+            <price>100</price>
+        </wool>
+        <cotton>
+            <level>1</level>
+            <strength>1</strength>
+            <price>50</price>
+        </cotton>
+        <twine>
+            <level>1</level>
+            <strength>1</strength>
+            <price>100</price>
+        </twine>
+    </fibre>
+    <grain unit="100g">
+        <wheat>
+            <level>1</level>
+            <calories>300</calories>
+            <price>50</price>
+        </wheat>
+        <raw_rice>
+            <level>1</level>
+            <calories>350<calories>
+            <price>100</price>
+        </raw_rice>
+    </grain>
+</level_1>
+<level_2>
+    <meat>
+        <bacon>
+            <level>2</level>
+            <calories>500</calories>
+            <price>50</price>
+        </bacon>
+    </meat>
+</level_2>
+</ranch>
