@@ -47,11 +47,11 @@
             <calories>300</calories>
             <price>50</price>
         </wheat>
-        <raw_rice>
+        <paddy>
             <level>1</level>
             <calories>350<calories>
             <price>100</price>
-        </raw_rice>
+        </paddy>
     </grain>
 </level_1>
 <level_2>
