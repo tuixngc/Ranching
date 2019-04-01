@@ -15,6 +15,7 @@ public class Compound : MonoBehaviour
 
     public SceneData data;
 
+    // 加载合成栏图片
     private void CheckData()
     {
         int i = 0;
@@ -22,10 +23,12 @@ public class Compound : MonoBehaviour
         foreach(FoodType ft in data.list)
         {
             // 通过foodType动态加载图片
-            Debug.Log(ft.GetSprite());
-            Sprite tx= Resources.Load<Sprite>(ft.GetSprite());
-            if(tx!=null)
+            Debug.Log(ft.GetName());
+            Sprite tx= Resources.Load<Sprite>(ft.GetName());
+            if (tx != null)
                 Debug.Log(tx);
+            else
+                Debug.Log("not find");
             images[i].sprite = tx;
             i++;
         }

@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class FoodType
 {
-    public FoodType(int main, int sub, int lv)
+    public FoodType(int main, int sub, int lv, string name)
     {
-        if( main <=99&& sub <= 99)
-        {
             this.mainType = main;
             this.subType = sub;
             this.level = lv;
-        }
-        
+            this.name = name;
     }
 
     public string GetMain()
@@ -42,7 +39,7 @@ public class FoodType
 
     public string GetSprite()
     {
-        return GetSub() ;
+        return name;
     }
 
     public int GetLv()
@@ -50,7 +47,12 @@ public class FoodType
         return level;
     }
 
-    private int mainType;
+    public string GetName()
+    {
+        return name;
+    }
+
+    public int mainType;
 
     private int subType;
 

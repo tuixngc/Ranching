@@ -9,7 +9,7 @@ public class SceneData : MonoBehaviour
     // 存储用来合成的五个物品
     public List<FoodType> list = new List<FoodType>();
 
-    public Image result;
+    public List<Image> result;
 
     public void InsertFoodType(string foodType)
     {
@@ -29,7 +29,9 @@ public class SceneData : MonoBehaviour
     {
         if (list.Count > 0)
             list.Clear();
-        result.sprite = null;
+        result[0].sprite = null;
+        result[1].sprite = null;
+        result[2].sprite = null;
         Debug.Log("clear");
     }
 
@@ -39,9 +41,19 @@ public class SceneData : MonoBehaviour
         // 目前采用最简单的
         Debug.Log("compound");
         string str = list[0].GetSub() + list[1].GetSub();
-        str = GamePersist.Get().compoundMap[str];
 
-        result.sprite = Resources.Load<Sprite>(str);
+        for(int i = 0; i<3; ++i)
+        {
+            if (GamePersist.Get().compoundMap.ContainsKey(str + i))
+            {
+                string food = GamePersist.Get().compoundMap[str + i];
+                Debug.Log(i);
+                string name = GamePersist.Get().foodMap[food].GetName();
+                result[i].sprite = Resources.Load<Sprite>(name);
+            }
+            
+        }
+        
     }
 
     public void ExitScene()

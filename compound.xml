@@ -1,84 +1,84 @@
 <compound>
-    <level_1>
-    <meat>
+<level_1>
+    <meat id = "1">
         <pork>
-            <identifier>"101"</identifier>
+            <identifier>01</identifier>
         </pork>
         <beef>
-            <identifier>"102"</identifier>
+            <identifier>02</identifier>
         </beef>
         <mutton>
-            <identifier>"103"</identifier>
+            <identifier>03</identifier>
         </mutton>
     </meat>
-    <diary>
+    <diary id = "2">
         <milk>
-            <identifier>"201"</identifier>
+            <identifier>01</identifier>
         </milk>
     </diary>
-    <fibre>
+    <fibre id = "3">
         <wool>
-            <identifier>"301"</identifier>
+            <identifier>01</identifier>
         </wool>
         <cotton>
-            <identifier>"302"</identifier>
+            <identifier>02</identifier>
         </cotton>
         <twine>
-            <identifier>"303"</identifier>
+            <identifier>03</identifier>
         </twine>
     </fibre>
-    <grain>
+    <grain id = "4">
         <wheat>
-            <identifier>"401"</identifier>
+            <identifier>01</identifier>
         </wheat>
         <paddy>
-            <identifier>"402"</identifier>
+            <identifier>02</identifier>
         </paddy>
     </grain>
 </level_1>
 <level_2>
-    <meat>
+    <meat id = "1">
         <bacon>
-            <identifier>"1011010"</identifier>
+            <identifier>010101010</identifier>
         </bacon>
         <sausage>
-            <identifier>"1011011"</identifier>
+            <identifier>010101011</identifier>
         </sausage>
         <steak>
-            <identifier>"1021020"</identifier>
+            <identifier>010201020</identifier>
         </steak>
         <mutton_chop>
-            <identifier>"1031030"</identifier>
-        <mutton_chop>
+            <identifier>010301030</identifier>
+        </mutton_chop>
     </meat>
-    <diary>
+    <diary id = "2">
         <cheese>
-            <identifier>"2012010"</identifier>
+            <identifier>020102010</identifier>
         </cheese>
         <yogurt>
-            <identifier>"2012011"</identifier>
+            <identifier>020102011</identifier>
         </yogurt>
     </diary>
-    <fibre>
+    <fibre id = "3">
         <caddice>
-            <identifier>"3013010"</identifier>
+            <identifier>030103010</identifier>
         </caddice>
         <jean>
-            <identifier>"3023020"</identifier>
+            <identifier>030203020</identifier>
         </jean>
         <canvas>
-            <identifier>"3023021"</identifier>
+            <identifier>030203021</identifier>
         </canvas>
         <flax>
-            <identifier>"3033030"</identifier>
+            <identifier>030303030</identifier>
         </flax>
     </fibre>
-     <grain>
+     <grain id = "4">
         <flour>
-            <identifier>"4014010"</identifier>
+            <identifier>040104010</identifier>
         </flour>
         <rice>
-            <identifier>"4024020"</identifier>
+            <identifier>040204020</identifier>
         </rice>
     </grain>
 </level_2>
